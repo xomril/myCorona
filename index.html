@@ -9,11 +9,27 @@
 </head>
 
 <body>
-
 <div>
-    <button id = "find-me" onclick="geoFindMe();">Show my location</button><br/>
-    <p id="status"></p>
-    <a id="map-link" target="_blank"></a>
+    <form action="" method="post">
+        <div>
+            <label for="age">גיל:</label>
+            <input type="text" name="age" id="age" />
+        </div>
+        <div>
+            <label for="sex">מין:</label>
+            <input type="text" name="sex" id="sex" />
+        </div>
+        <div>
+            <label for="map-link">מיקום:</label>
+            <input type="text" name="map-link" id="map-link" />
+            <button id = "find-me" onclick="geoFindMe();">Show my location</button>
+            <span id="status"></span>
+
+        </div>
+    </form>
+</div>
+<div>
+
 </div>
 
 </body>
