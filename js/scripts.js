@@ -14,7 +14,7 @@ function geoFindMe() {
         const latitude  = position.coords.latitude;
         const longitude = position.coords.longitude;
 
-        status.textContent = '';
+      //  status.textContent = '';
        // mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
         mapLink.value = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
     }
