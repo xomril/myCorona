@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <title>"My Corona Status</title>
+    <meta name="description" content="My Corona Status">
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+<div>
+    <form action="" method="post">
+        <div>
+            <span>גיל:</span>
+            <input type="text" name="age" id="age" />
+
+
+        </div>
+        <hr>
+        <div>
+            מין:
+            <div>
+                <input type="radio" name="sex" id="sex-0" value="0" />
+                <lable for="sex-0">זכר</lable>
+
+            </div>
+
+            <div>
+                <input type="radio" name="sex" id="sex-1" value="1" />
+                <lable for="sex-1">נקבה</lable>
+
+            </div>
+
+            <div>
+                <input type="radio" name="sex" id="sex-2" value="2" />
+                <lable for="sex-2">אחר</lable>
+
+            </div>
+        </div>
+        <hr>
+        <div>
+            <span>מיקום:</span>
+            <input type="text" name="maplink" id="map-link" />
+            <span id="status"></span>
+
+        </div>
+            <div>
+                האם אתה מאובחן כסובל מאחת מהמחלות הבאות: סוכרת, יתר לחץ דם, מחלת לב איסכמית, אסטמה, מחלת ריאות כרונית, אי ספיקת כליות כרונית
+                <br/>
+                <div>
+                    <input type="radio" id="hirisk-0" name="hirisk" value="0" />
+                    <label for="hirisk-0"> כן</label>
+                    <br/>
+
+                    <input type="radio" id="hirisk-1" name="hirisk" value="1" />
+                    <label for="hirisk-1"> לא</label>
+                    <br/>
+                </div>
+            </div>
+            <hr>
+            <div>
+                אני
+                <br/>
+                <div>
+                    <input type="radio" id="smoker-0" name="smoker" value="0" />
+                    <label for="smoker-0"> מעשן/ת</label>
+                    <br/>
+
+                    <input type="radio" id="smoker-1" name="smoker" value="1" />
+                    <label for="smoker-1"> עישנתי בעבר</label>
+                    <br/>
+
+                    <input type="radio" id="smoker-2" name="smoker" value="2" />
+                    <label for="smoker-2"> מעולם לא עישנתי</label>
+                    <br/>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <input type="submit" value="עידכון"/>
+            </div>
+        </div>
+    </form>
+</div>
+<div>
+
+</div>
+<script>
+    geoFindMe();
+</script>
+</body>
+</html>
